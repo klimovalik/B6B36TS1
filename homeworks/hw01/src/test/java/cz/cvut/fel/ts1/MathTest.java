@@ -9,4 +9,10 @@ public class MathTest {
         Math math = new Math();
         assertEquals(math.factorialRecursive(3), 6);
     }
+
+    @Test
+    public void factorialIterativeTest() {
+        Math math = new Math();
+        assertEquals(math.factorialIterative(3), 6);
+    }
 }
