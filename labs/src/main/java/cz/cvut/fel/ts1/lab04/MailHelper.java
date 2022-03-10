@@ -12,26 +12,43 @@ import javax.mail.internet.MimeMessage;
  * @author balikm1
  */
 public class MailHelper {
-   
-    public static void createAndSendMail(String to, String subject, String body)
-    {
-        Mail mail = new Mail();
+    private Mail mail;
+
+    public MailHelper() {
+        mail = new Mail();
+    }
+
+    public void createAndSendMail(String to, String subject, String body) {
+        getMail(to, subject, body);
+        saveMail();
+        handleDebugAndSend();
+    }
+
+    public Mail getMail() {
+        return mail;
+    }
+
+    private void getMail(String to, String subject, String body) {
         mail.setTo(to);
         mail.setSubject(subject);
         mail.setBody(body);
         mail.setIsSent(false);
+    }
+
+    private void saveMail() {
         DBManager dbManager = new DBManager();
         dbManager.saveMail(mail);
+    }
 
+    private void handleDebugAndSend() {
         if (!Configuration.isDebug) {
             (new Thread(() -> {
                 sendMail(mail.getMailId());
             })).start();
         }
     }
-    
-    public static void sendMail(int mailId)
-    {
+
+    public void sendMail(int mailId) {
         try
         {
             // get entity

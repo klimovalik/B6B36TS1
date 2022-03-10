@@ -18,4 +18,16 @@ public class CalculatorTest {
 // assert
         assertEquals(expectedResult, result);
     }
+
+    @ParameterizedTest(name = "{0} multiple {1} should be equal to {2}")
+    @CsvSource({"1, 2, 2", "0, 3, 0"})
+    public void multiply_multipliesAandB_returnsC(int a, int b, int c) {
+// arrange
+        Calculator calc = new Calculator();
+        int expectedResult = c;
+// act
+        int result = calc.multiply(a, b);
+// assert
+        assertEquals(expectedResult, result);
+    }
 }
