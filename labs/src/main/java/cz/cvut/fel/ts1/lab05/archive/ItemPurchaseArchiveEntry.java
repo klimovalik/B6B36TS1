@@ -1,6 +1,6 @@
 package cz.cvut.fel.ts1.lab05.archive;
 
-import shop.Item;
+import cz.cvut.fel.ts1.lab05.shop.Item;
 
 class ItemPurchaseArchiveEntry {
     private Item refItem;

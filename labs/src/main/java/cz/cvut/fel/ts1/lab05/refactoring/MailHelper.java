@@ -13,13 +13,18 @@ import javax.mail.internet.MimeMessage;
  * @author balikm1
  */
 public class MailHelper {
-    
+
+    private Mail mail;
     private final DBManager dbManager;
     protected Thread sendingThread; // keep the thread reference for synchronization in unit tests
     
     public MailHelper(DBManager dbManager)
     {
         this.dbManager = dbManager;
+    }
+
+    public Mail getMail() {
+        return mail;
     }
     
     public void createAndSendMail(String to, String subject, String body)
@@ -39,7 +44,7 @@ public class MailHelper {
         try
         {
             // get entity
-            Mail mail = loadMail(mailId);
+            mail = loadMail(mailId);
             if (mail == null) {
                 return;
             }
@@ -97,6 +102,7 @@ public class MailHelper {
 
     protected void sendMail(MimeMessage message) throws MessagingException
     {
-        Transport.send(message);
+        System.out.println("Mail is sent");
+        //Transport.send(message);
     }   
 }
