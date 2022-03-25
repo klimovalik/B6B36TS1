@@ -1,0 +1,5 @@
+Registrace	Jmeno/Prijmeni	Destinace	Datum narozeni	Sleva
+ANO	NULL	v EU	DD.MM.YYYY	Student
+NE	Pismena	mimo EU	MM/DD/YYYY	Duchodce
+	Zvlastni znaky		YYYY-MM-DD	Slevovy kupon
+

@@ -1,0 +1,86 @@
+
+TEST CASES
+case	Registrace	Jmeno/Prijmeni	Destinace	Datum narozeni	Sleva	pairings
+1	ANO	NULL	v EU	DD.MM.YYYY	Student	10
+2	NE	NULL	mimo EU	MM/DD/YYYY	Duchodce	10
+3	ANO	Pismena	mimo EU	DD.MM.YYYY	Duchodce	8
+4	NE	Pismena	v EU	MM/DD/YYYY	Student	8
+5	ANO	Zvlastni znaky	v EU	YYYY-MM-DD	Slevovy kupon	9
+6	NE	Zvlastni znaky	mimo EU	DD.MM.YYYY	Slevovy kupon	7
+7	NE	NULL	mimo EU	YYYY-MM-DD	Student	5
+8	ANO	Pismena	~mimo EU	MM/DD/YYYY	Slevovy kupon	3
+9	~ANO	Zvlastni znaky	v EU	MM/DD/YYYY	Duchodce	3
+10	~NE	NULL	~v EU	YYYY-MM-DD	Duchodce	1
+11	~ANO	Pismena	~mimo EU	YYYY-MM-DD	~Student	1
+12	~NE	Zvlastni znaky	~v EU	~DD.MM.YYYY	Student	1
+13	~ANO	NULL	~v EU	~DD.MM.YYYY	Slevovy kupon	1
+
+PAIRING DETAILS
+var1	var2	value1	value2	appearances	cases
+Jmeno/Prijmeni	Datum narozeni	NULL	DD.MM.YYYY	2	1, 13
+Jmeno/Prijmeni	Datum narozeni	NULL	MM/DD/YYYY	1	2
+Jmeno/Prijmeni	Datum narozeni	NULL	YYYY-MM-DD	2	7, 10
+Jmeno/Prijmeni	Datum narozeni	Pismena	DD.MM.YYYY	1	3
+Jmeno/Prijmeni	Datum narozeni	Pismena	MM/DD/YYYY	2	4, 8
+Jmeno/Prijmeni	Datum narozeni	Pismena	YYYY-MM-DD	1	11
+Jmeno/Prijmeni	Datum narozeni	Zvlastni znaky	DD.MM.YYYY	2	6, 12
+Jmeno/Prijmeni	Datum narozeni	Zvlastni znaky	MM/DD/YYYY	1	9
+Jmeno/Prijmeni	Datum narozeni	Zvlastni znaky	YYYY-MM-DD	1	5
+Jmeno/Prijmeni	Sleva	NULL	Student	2	1, 7
+Jmeno/Prijmeni	Sleva	NULL	Duchodce	2	2, 10
+Jmeno/Prijmeni	Sleva	NULL	Slevovy kupon	1	13
+Jmeno/Prijmeni	Sleva	Pismena	Student	2	4, 11
+Jmeno/Prijmeni	Sleva	Pismena	Duchodce	1	3
+Jmeno/Prijmeni	Sleva	Pismena	Slevovy kupon	1	8
+Jmeno/Prijmeni	Sleva	Zvlastni znaky	Student	1	12
+Jmeno/Prijmeni	Sleva	Zvlastni znaky	Duchodce	1	9
+Jmeno/Prijmeni	Sleva	Zvlastni znaky	Slevovy kupon	2	5, 6
+Jmeno/Prijmeni	Registrace	NULL	ANO	2	1, 13
+Jmeno/Prijmeni	Registrace	NULL	NE	3	2, 7, 10
+Jmeno/Prijmeni	Registrace	Pismena	ANO	3	3, 8, 11
+Jmeno/Prijmeni	Registrace	Pismena	NE	1	4
+Jmeno/Prijmeni	Registrace	Zvlastni znaky	ANO	2	5, 9
+Jmeno/Prijmeni	Registrace	Zvlastni znaky	NE	2	6, 12
+Jmeno/Prijmeni	Destinace	NULL	v EU	3	1, 10, 13
+Jmeno/Prijmeni	Destinace	NULL	mimo EU	2	2, 7
+Jmeno/Prijmeni	Destinace	Pismena	v EU	1	4
+Jmeno/Prijmeni	Destinace	Pismena	mimo EU	3	3, 8, 11
+Jmeno/Prijmeni	Destinace	Zvlastni znaky	v EU	3	5, 9, 12
+Jmeno/Prijmeni	Destinace	Zvlastni znaky	mimo EU	1	6
+Datum narozeni	Sleva	DD.MM.YYYY	Student	2	1, 12
+Datum narozeni	Sleva	DD.MM.YYYY	Duchodce	1	3
+Datum narozeni	Sleva	DD.MM.YYYY	Slevovy kupon	2	6, 13
+Datum narozeni	Sleva	MM/DD/YYYY	Student	1	4
+Datum narozeni	Sleva	MM/DD/YYYY	Duchodce	2	2, 9
+Datum narozeni	Sleva	MM/DD/YYYY	Slevovy kupon	1	8
+Datum narozeni	Sleva	YYYY-MM-DD	Student	2	7, 11
+Datum narozeni	Sleva	YYYY-MM-DD	Duchodce	1	10
+Datum narozeni	Sleva	YYYY-MM-DD	Slevovy kupon	1	5
+Datum narozeni	Registrace	DD.MM.YYYY	ANO	3	1, 3, 13
+Datum narozeni	Registrace	DD.MM.YYYY	NE	2	6, 12
+Datum narozeni	Registrace	MM/DD/YYYY	ANO	2	8, 9
+Datum narozeni	Registrace	MM/DD/YYYY	NE	2	2, 4
+Datum narozeni	Registrace	YYYY-MM-DD	ANO	2	5, 11
+Datum narozeni	Registrace	YYYY-MM-DD	NE	2	7, 10
+Datum narozeni	Destinace	DD.MM.YYYY	v EU	3	1, 12, 13
+Datum narozeni	Destinace	DD.MM.YYYY	mimo EU	2	3, 6
+Datum narozeni	Destinace	MM/DD/YYYY	v EU	2	4, 9
+Datum narozeni	Destinace	MM/DD/YYYY	mimo EU	2	2, 8
+Datum narozeni	Destinace	YYYY-MM-DD	v EU	2	5, 10
+Datum narozeni	Destinace	YYYY-MM-DD	mimo EU	2	7, 11
+Sleva	Registrace	Student	ANO	2	1, 11
+Sleva	Registrace	Student	NE	3	4, 7, 12
+Sleva	Registrace	Duchodce	ANO	2	3, 9
+Sleva	Registrace	Duchodce	NE	2	2, 10
+Sleva	Registrace	Slevovy kupon	ANO	3	5, 8, 13
+Sleva	Registrace	Slevovy kupon	NE	1	6
+Sleva	Destinace	Student	v EU	3	1, 4, 12
+Sleva	Destinace	Student	mimo EU	2	7, 11
+Sleva	Destinace	Duchodce	v EU	2	9, 10
+Sleva	Destinace	Duchodce	mimo EU	2	2, 3
+Sleva	Destinace	Slevovy kupon	v EU	2	5, 13
+Sleva	Destinace	Slevovy kupon	mimo EU	2	6, 8
+Registrace	Destinace	ANO	v EU	4	1, 5, 9, 13
+Registrace	Destinace	ANO	mimo EU	3	3, 8, 11
+Registrace	Destinace	NE	v EU	3	4, 10, 12
+Registrace	Destinace	NE	mimo EU	3	2, 6, 7
