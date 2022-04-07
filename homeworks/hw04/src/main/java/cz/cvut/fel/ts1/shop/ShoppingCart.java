@@ -1,6 +1,9 @@
 package cz.cvut.fel.ts1.shop;
 
+import cz.cvut.fel.ts1.storage.NoItemInStorage;
+
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 
 /**
@@ -41,14 +44,17 @@ public class ShoppingCart {
      * @param itemID   ID of the item to remove form the shopping chart
      */
     
-    public void removeItem(int itemID) {
-        for (int i = items.size() - 1; i <= 0; i--) {
-            Item temp_item = (Item) items.get(i);
-            if (temp_item.getID() == itemID) {
-                items.remove(i);
-                System.out.println("Item with ID " + temp_item.getID() + " removed from the shopping cart.");
+    public void removeItem(int itemID) throws NoItemInCart {
+        if (items.stream().map(Item::getID).toList().contains(itemID)) {
+            for (int i = items.size() - 1; i >= 0; i--) {
+                Item temp_item = (Item) items.get(i);
+                if (temp_item.getID() == itemID) {
+                    items.remove(i);
+                    System.out.println("Item with ID " + temp_item.getID() + " removed from the shopping cart.");
+                    return;
+                }
             }
-        }
+        } else throw new NoItemInCart();
     }
 
     public int getItemsCount() {

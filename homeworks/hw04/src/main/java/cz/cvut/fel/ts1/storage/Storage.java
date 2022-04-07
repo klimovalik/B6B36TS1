@@ -1,9 +1,10 @@
 package cz.cvut.fel.ts1.storage;
 
-import cz.cvut.fel.ts1.archive.PurchasesArchive;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.stream.Collectors;
+
 import cz.cvut.fel.ts1.shop.*;
 
 public class Storage {
@@ -20,6 +21,10 @@ public class Storage {
 
     public Collection<ItemStock> getStockEntries() {
         return stock.values();
+    }
+
+    public ArrayList<Integer> getItemsCounts() {
+        return (ArrayList<Integer>) stock.values().stream().map(ItemStock::getCount).collect(Collectors.toList());
     }
 
     /**
@@ -44,7 +49,7 @@ public class Storage {
             stock.put(item.getID(), new ItemStock(item));
         }
         ItemStock e = stock.get(item.getID());
-        e.IncreaseItemCount(count);
+        e.increaseItemCount(count);
     }
 
     

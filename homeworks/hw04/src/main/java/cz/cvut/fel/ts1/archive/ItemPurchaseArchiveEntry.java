@@ -2,24 +2,24 @@ package cz.cvut.fel.ts1.archive;
 
 import cz.cvut.fel.ts1.shop.Item;
 
-class ItemPurchaseArchiveEntry {
+public class ItemPurchaseArchiveEntry {
     private Item refItem;
     private int soldCount;
-    
-    ItemPurchaseArchiveEntry(Item refItem) {
+
+    public ItemPurchaseArchiveEntry(Item refItem) {
         this.refItem = refItem;
         soldCount = 1;
     }
-    
-    void increaseCountHowManyTimesHasBeenSold(int x) {
+
+    public void increaseCountHowManyTimesHasBeenSold(int x) {
         soldCount += x;
     }
-    
-    int getCountHowManyTimesHasBeenSold() {
+
+    public int getCountHowManyTimesHasBeenSold() {
         return soldCount;
     }
-    
-    Item getRefItem() {
+
+    public Item getRefItem() {
         return refItem;
     }
     

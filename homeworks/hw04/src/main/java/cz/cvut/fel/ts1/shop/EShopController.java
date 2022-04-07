@@ -45,13 +45,47 @@ public class EShopController {
         }
     }
 
+    public static void stopEShop() {
+        storage = null;
+    }
+
+    public static void setStorage(Storage storage) {
+        EShopController.storage = storage;
+    }
+
+    public static void setArchive(PurchasesArchive archive) {
+        EShopController.archive = archive;
+    }
+
+    public static void setCarts(ArrayList<ShoppingCart> carts) {
+        EShopController.carts = carts;
+    }
+
+    public static void setOrders(ArrayList<Order> orders) {
+        EShopController.orders = orders;
+    }
+
+    public static Storage getStorage() {
+        return storage;
+    }
+
+    public static PurchasesArchive getArchive() {
+        return archive;
+    }
+
+    public static ArrayList<ShoppingCart> getCarts() {
+        return carts;
+    }
+
+    public static ArrayList<Order> getOrders() {
+        return orders;
+    }
 
 
 
 
 
-
-public static void main(String[] args) throws NoItemInStorage {
+    public static void main(String[] args) throws NoItemInStorage {
         EShopController.startEShop();
         
         /* make up an artificial data */

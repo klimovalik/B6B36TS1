@@ -111,7 +111,7 @@ public class DiscountedItem extends Item {
     
     
     public float getDiscountedPrice() {
-        return super.getPrice()*(100 - discount);
+        return super.getPrice()*(100 - discount)/100;
     }
     
     
