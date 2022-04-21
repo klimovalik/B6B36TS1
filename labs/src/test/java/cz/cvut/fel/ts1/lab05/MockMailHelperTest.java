@@ -1,8 +1,7 @@
-package cz.cvut.fel.ts1.lab05.refactoring;
+package cz.cvut.fel.ts1.lab05;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import static org.mockito.Mockito.times;

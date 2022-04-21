@@ -1,4 +1,4 @@
-package cz.cvut.fel.ts1.lab05.refactoring;
+package cz.cvut.fel.ts1.lab05;
 
 import java.util.ArrayList;
 import java.util.List;
