@@ -15,7 +15,8 @@ public class TestCase {
 
     @BeforeEach
     public void init() {
-        String pathToDriver = "C:\\Users\\podav\\Desktop\\cvut\\ts\\github\\B6B36TS1\\labs\\chromedriver.exe";
+//        String pathToDriver = "C:\\Users\\podav\\Desktop\\cvut\\ts\\github\\B6B36TS1\\labs\\chromedriver.exe";
+        String pathToDriver = "chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", pathToDriver);
         driver = new ChromeDriver();
     }

@@ -26,8 +26,6 @@ public class DemoQAFormTests extends TestCase {
         WebElement practiceFormButton = driver.findElement(By.xpath("//span[text()='Practice Form']//../../li[@id='item-0']"));
         wait.until(ExpectedConditions.visibilityOf(practiceFormButton));
         jsClick(practiceFormButton);
-
-
     }
 
     @Test
@@ -39,6 +37,6 @@ public class DemoQAFormTests extends TestCase {
     @Test
     public void mainPage() {
         DemoQAMainPage mainPage = new DemoQAMainPage(getDriver());
-        mainPage.clickForms();
+        mainPage.clickForms().clickPracticeForm();
     }
 }
