@@ -1,0 +1,3 @@
+'Broken device' event report:
+
+'Electricity outage' event report:

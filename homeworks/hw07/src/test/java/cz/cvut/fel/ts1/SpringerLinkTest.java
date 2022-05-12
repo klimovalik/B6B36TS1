@@ -6,6 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
@@ -13,7 +14,7 @@ import java.util.stream.Stream;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SpringerLinkTest extends TestCase {
 
-    static List<Article> articles = new ArrayList<>();
+    private static List<Article> articles = new ArrayList<>();
 
     @Test
     @Order(1)
@@ -25,7 +26,7 @@ public class SpringerLinkTest extends TestCase {
                                         .inputAndWords("Page Object Model")
                                         .inputOrWords("Selenium Testing")
                                         .selectYearOption("between")
-                                        .inputBetweenYear()
+                                        .inputBetweenYear(Year.now().toString())
                                         .clickSearch()
                                         .clickArticleContentType();
 

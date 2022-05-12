@@ -80,20 +80,20 @@ public class AdvancedSearchPage {
         return this;
     }
 
-    public AdvancedSearchPage inputBetweenYear() {
+    public AdvancedSearchPage inputBetweenYear(String year) {
         waitWebElement(startYearXPath);
-        startYear.sendKeys(Year.now().toString());
+        startYear.sendKeys(year);
         waitWebElement(endYearXPath);
-        endYear.sendKeys(Year.now().toString());
+        endYear.sendKeys(year);
         return this;
     }
 
     /**
      * Option "in" does not filter the result as expected.
      */
-    public AdvancedSearchPage inputInYear() {
+    public AdvancedSearchPage inputInYear(String year) {
         waitWebElement(startYearXPath);
-        startYear.sendKeys(Year.now().toString());
+        startYear.sendKeys(year);
         return this;
     }
 

@@ -1,0 +1,114 @@
+Big TV in Living room (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+PS5 in Living room (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Small TV in Kitchen (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Wall TV in Bedroom (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Fridge in Kitchen (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Thermostat in Living room (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Thermostat in Bedroom (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Thermostat in Bathroom (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Thermostat in Kitchen (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Kettle in Kitchen (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Tigran's iPad Pro in Bathroom (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Bob's iPad Pro in Living room (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+David's iPad Pro in Bedroom (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Bedside lamp in Bedroom (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Office lamp in Office (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Bathroom lamp in Bathroom (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Computer in Office (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Music speaker in Bedroom (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
+Music speaker in Living room (0. floor):
+	Final functionality -> 100 %
+	Total usage time -> 0 hours
+	Total used electricity -> 0 W  | approximate price = 0.0 Kc
+	Total count of fixing -> 0 times
+
